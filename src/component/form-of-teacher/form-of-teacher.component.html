@@ -1,0 +1,15 @@
+<form (ngSubmit)="onSubmit()">
+    @if(this.teacher)
+    {{{after()}}}
+    <label for="teacherToForm._Id">teacher id:</label>
+    <input id="teacherToForm._Id" [(ngModel)]="teacherToForm._Id" name="teacherToForm._Id" [disabled]="true">
+    
+    <label for="teacherToForm._name">teacher name:</label>
+    <input id="teacherToForm._name" [(ngModel)]="teacherToForm._name" name="teacherToForm._name" required>
+    
+    <label for="teacherToForm._classes">teacher classes:</label>
+    <input id="teacherToForm._classes" [(ngModel)]="teacherToForm._classes" name="teacherToForm._classes" required value="teacherToForm._classes">
+    
+    <button type="submit" >Submit</button>
+   </form>
+   
